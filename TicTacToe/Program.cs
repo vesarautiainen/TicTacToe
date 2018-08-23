@@ -66,7 +66,7 @@ namespace TicTacToe
                     }
                 }
                 PrintBoard(gameBoard);
-                Console.WriteLine("Congratultaions player {0}. YOU WON!", PrintPlayer(currentPlayer));
+                Console.WriteLine("Congratulations player {0}. YOU WON!", PrintPlayer(currentPlayer));
 
             } while (NewGame());
 
