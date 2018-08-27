@@ -66,11 +66,11 @@ namespace TicTacToe
                     }
                 }
                 PrintBoard(gameBoard);
-                Console.WriteLine("Congratultaions player {0}. YOU WON!", PrintPlayer(currentPlayer));
+                Console.WriteLine("Congratulations player {0}. YOU WON!", PrintPlayer(currentPlayer));
 
             } while (NewGame());
 
-            Console.WriteLine("Thanks for playing!");
+            Console.WriteLine("Thanks for playing! How about another game?");
         }
 
         private static bool NewGame()
