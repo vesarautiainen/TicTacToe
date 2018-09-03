@@ -76,7 +76,7 @@ namespace TicTacToe
         private static bool NewGame()
         {
             bool returnValue = false;
-            Console.WriteLine("Would you like to play another game? [y/n]");
+            Console.WriteLine("Would you like to play another one? [y/n]");
             string playAgain;
             playAgain = Console.ReadLine();
             if (playAgain == "y")
