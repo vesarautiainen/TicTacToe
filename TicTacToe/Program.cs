@@ -70,7 +70,7 @@ namespace TicTacToe
 
             } while (NewGame());
 
-            Console.WriteLine("Thanks for playing! How about another game?");
+            Console.WriteLine("Thanks for playing! How about another game my friend?");
         }
 
         private static bool NewGame()
