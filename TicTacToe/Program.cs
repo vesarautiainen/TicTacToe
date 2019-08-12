@@ -25,8 +25,9 @@ namespace TicTacToe
             int moveCount;
             Tuple<int, int> move = new Tuple<int, int>(0, 0);
 
-            gameBoard = new char[dimension, dimension];
+            gameBoard = new char[dimension, dimension];  
 
+            // test comment
             ClearBoard(gameBoard);
 
             do
