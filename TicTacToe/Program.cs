@@ -4,7 +4,9 @@ namespace TicTacToe
 {
     class Program
     {
-        static int dimension = 2;
+
+        // another comment
+        static int dimension = 3;
         private static char emptyCell = ' ';
 
         static void Main(string[] args)
@@ -65,7 +67,9 @@ namespace TicTacToe
                         }
                     }
                 }
+
                 PrintBoard(gameBoard);
+                // merge-test-line
                 Console.WriteLine("Congratulations player {0}. YOU WON!", PrintPlayer(currentPlayer));
 
             } while (NewGame());
@@ -73,6 +77,7 @@ namespace TicTacToe
             Console.WriteLine("Thanks for playing! How about another game my friend?");
         }
 
+        // merge-test-line
         private static bool NewGame()
         {
             bool returnValue = false;
@@ -102,6 +107,7 @@ namespace TicTacToe
             {
                 if (player != board[move.Item1, y])
                 {
+                    // merge-test-line
                     break;
                 }
 
