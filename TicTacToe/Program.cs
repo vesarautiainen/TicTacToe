@@ -73,7 +73,7 @@ namespace TicTacToe
 
             } while (NewGame());
 
-            Console.WriteLine("Thanks for playing! How about another game?");
+            Console.WriteLine("Thanks for playing! How about another game my friend?");
         }
 
         // merge-test-line
@@ -106,6 +106,7 @@ namespace TicTacToe
             {
                 if (player != board[move.Item1, y])
                 {
+                    // merge-test-line
                     break;
                 }
 
