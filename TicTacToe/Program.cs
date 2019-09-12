@@ -4,6 +4,7 @@ namespace TicTacToe
 {
     class Program
     {
+
         // another comment
         static int dimension = 3;
         private static char emptyCell = ' ';
@@ -73,7 +74,7 @@ namespace TicTacToe
 
             } while (NewGame());
 
-            Console.WriteLine("Thanks for playing! How about another game?");
+            Console.WriteLine("Thanks for playing! How about another game my friend?");
         }
 
         // merge-test-line
