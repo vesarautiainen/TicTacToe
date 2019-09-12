@@ -53,7 +53,7 @@ namespace TicTacToe
                     }
                     catch (Exception ex)
                     {
-                        if (ex is InvalidMoveException || ex is IndexOutOfRangeException)
+                        if (ex is InvalidMoveException || ex is IndexOutOfRangeException) 
                         {
                             Console.WriteLine();
                             Console.WriteLine("INVALID MOVE");
