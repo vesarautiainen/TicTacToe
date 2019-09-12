@@ -66,6 +66,7 @@ namespace TicTacToe
                     }
                 }
                 PrintBoard(gameBoard);
+                // merge-test-line
                 Console.WriteLine("Congratulations player {0}. YOU WON!", PrintPlayer(currentPlayer));
 
             } while (NewGame());
@@ -73,6 +74,7 @@ namespace TicTacToe
             Console.WriteLine("Thanks for playing! How about another game?");
         }
 
+        // merge-test-line
         private static bool NewGame()
         {
             bool returnValue = false;
