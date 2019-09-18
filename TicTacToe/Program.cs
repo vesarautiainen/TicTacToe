@@ -6,13 +6,10 @@ namespace TicTacToe
     {
 
 
-
-        
-
         static int dimension = 3;
 
 
-        private static char emptyCell = ' ';
+            private static char emptyCell = ' ';
 
         static void Main(string[] args)
         {
