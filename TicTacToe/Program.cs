@@ -1,10 +1,17 @@
 ﻿using System;
 
 namespace TicTacToe
-{
+{      
     class Program
     {
+
+
+
+        
+
         static int dimension = 3;
+
+
         private static char emptyCell = ' ';
 
         static void Main(string[] args)
@@ -25,7 +32,7 @@ namespace TicTacToe
             int moveCount;
             Tuple<int, int> move = new Tuple<int, int>(0, 0);
 
-            gameBoard = new char[dimension, dimension];  
+            gameBoard = new char[dimension, dimension];
 
             // test comment
             ClearBoard(gameBoard);
@@ -53,7 +60,7 @@ namespace TicTacToe
                     }
                     catch (Exception ex)
                     {
-                        if (ex is InvalidMoveException || ex is IndexOutOfRangeException) 
+                        if (ex is InvalidMoveException || ex is IndexOutOfRangeException)
                         {
                             Console.WriteLine();
                             Console.WriteLine("INVALID MOVE");
@@ -66,14 +73,17 @@ namespace TicTacToe
                         }
                     }
                 }
+
                 PrintBoard(gameBoard);
-                Console.WriteLine("Congratulations player {0}. YOU WON!", PrintPlayer(currentPlayer)); 
+                // merge-test-line
+                Console.WriteLine("Congratulations player {0}. YOU WON!", PrintPlayer(currentPlayer));
 
             } while (NewGame());
 
-            Console.WriteLine("Thanks for playing! How about another game?");
+            Console.WriteLine("Thanks for playing! How about another game my friend?");
         }
 
+        // merge-test-line
         private static bool NewGame()
         {
             bool returnValue = false;
@@ -103,6 +113,7 @@ namespace TicTacToe
             {
                 if (player != board[move.Item1, y])
                 {
+                    // merge-test-line
                     break;
                 }
 
