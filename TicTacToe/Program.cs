@@ -46,7 +46,7 @@ namespace TicTacToe
                     currentPlayer = moveCount % 2;
                     PrintBoard(gameBoard);
                     Console.Write("Player {0}, make your move: ", PrintPlayer(currentPlayer));
-                    strMove = Console.ReadLine();
+                    strMove = Console.ReadLine(); 
 
                     try
                     {
