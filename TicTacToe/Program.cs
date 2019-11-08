@@ -1,6 +1,6 @@
 ﻿using System;
-
-
+  
+  
 namespace TicTacToe
 {
     class Program
@@ -18,7 +18,7 @@ namespace TicTacToe
             PlayGame();
         }
 
-        
+
         private static void PlayGame()
         {
             char[,] gameBoard;
