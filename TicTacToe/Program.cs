@@ -1,7 +1,7 @@
 ﻿using System;
-  
-  
+
 namespace TicTacToe
+
 {
     class Program
     {
