@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-
 namespace TicTacToe
 {
     [Serializable]  
-     
      
     internal class InvalidMoveException : Exception
     {

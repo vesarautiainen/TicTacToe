@@ -3,7 +3,6 @@
 namespace TicTacToe
 {
 
-    
     class Program
     {
         static int dimension = 3;
@@ -18,7 +17,6 @@ namespace TicTacToe
 
             PlayGame();
         }
-
 
         private static void PlayGame()
         {
