@@ -9,7 +9,8 @@ namespace TicTacToe
         public InvalidMoveException()
         {
         }
-
+        
+        
         public InvalidMoveException(string message) : base(message)
         {
 
