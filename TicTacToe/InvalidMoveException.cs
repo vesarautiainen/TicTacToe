@@ -10,6 +10,7 @@ namespace TicTacToe
         {
         }
         
+        
         public InvalidMoveException(string message) : base(message)
         {
 
