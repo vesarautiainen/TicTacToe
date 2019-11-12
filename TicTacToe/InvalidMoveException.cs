@@ -4,7 +4,7 @@ using System.Runtime.Serialization;
 namespace TicTacToe
 {
     [Serializable]  
-     
+    // a new comment
     internal class InvalidMoveException : Exception
     {
         public InvalidMoveException()
