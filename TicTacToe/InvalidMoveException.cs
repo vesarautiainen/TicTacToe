@@ -5,6 +5,8 @@ namespace TicTacToe
 {
     [Serializable]  
 
+    // a new comment amended
+
     internal class InvalidMoveException : Exception
     {
         public InvalidMoveException()
@@ -18,8 +20,12 @@ namespace TicTacToe
         {
         }
 
+// comment that I want to commit!
+
+
         protected InvalidMoveException(SerializationInfo info, StreamingContext context) : base(info, context)
         {
         }
     }
+    // I don't want to include this comment
 }
