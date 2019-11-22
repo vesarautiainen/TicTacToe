@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Runtime.Serialization;
 
 namespace TicTacToe
@@ -24,5 +24,5 @@ namespace TicTacToe
         {
         }
     }
-
+    // I don't want to include this comment
 }
