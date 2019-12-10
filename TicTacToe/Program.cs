@@ -1,14 +1,11 @@
 ﻿using System;
+  
 
+  
 namespace TicTacToe
 {
     class Program
     {
-
-
-
-        
-
         static int dimension = 3;
         private static char emptyCell = ' ';
 
@@ -22,6 +19,7 @@ namespace TicTacToe
             PlayGame();
         }
 
+        // added line
         private static void PlayGame()
         {
             char[,] gameBoard;
@@ -84,7 +82,7 @@ namespace TicTacToe
         private static bool NewGame()
         {
             bool returnValue = false;
-            Console.WriteLine("Would you like to play another game? [y/n]");
+            Console.WriteLine("Would you like to play another one? [y/n]");
             string playAgain;
             playAgain = Console.ReadLine();
             if (playAgain == "y")
@@ -217,7 +215,7 @@ namespace TicTacToe
             if (board[move.Item1, move.Item2] != emptyCell)
             {
                 throw new InvalidMoveException();
-            }
+            }    
 
             board[move.Item1, move.Item2] = player;
         }
