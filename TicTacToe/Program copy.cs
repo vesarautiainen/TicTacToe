@@ -1,11 +1,11 @@
 ﻿using System;
   
-// the start
 
+  
 namespace TicTacToe
 {
     class Program
-    { 
+    {
         static int dimension = 3;
         private static char emptyCell = ' ';
 
