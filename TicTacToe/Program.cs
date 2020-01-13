@@ -1,7 +1,5 @@
 ﻿using System;
   
-// the start
-
 namespace TicTacToe
 {
     class Program
