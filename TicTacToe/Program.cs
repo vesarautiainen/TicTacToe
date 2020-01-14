@@ -1,9 +1,9 @@
 ﻿using System;
-  
+
 namespace TicTacToe
 {
     class Program
-    { 
+    {
         static int dimension = 3;
         private static char emptyCell = ' ';
 
@@ -16,6 +16,7 @@ namespace TicTacToe
 
             PlayGame();
         }
+
 
         // added line
         private static void PlayGame()
@@ -213,7 +214,7 @@ namespace TicTacToe
             if (board[move.Item1, move.Item2] != emptyCell)
             {
                 throw new InvalidMoveException();
-            }    
+            }
 
             board[move.Item1, move.Item2] = player;
         }
