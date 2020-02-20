@@ -7,7 +7,6 @@ namespace TicTacToe
 
     // a new comment amended again
 
-
     internal class InvalidMoveException : Exception
     {
         public InvalidMoveException()
