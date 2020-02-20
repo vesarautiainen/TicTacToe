@@ -2,6 +2,7 @@
   
 namespace TicTacToe
 {
+  // game starts here
     class Program
     {
         static int dimension = 2;
@@ -248,7 +249,4 @@ namespace TicTacToe
     }
 }
 
-
-
-
-
+// and ends here
