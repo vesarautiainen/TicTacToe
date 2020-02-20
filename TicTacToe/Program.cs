@@ -2,7 +2,6 @@
   
 namespace TicTacToe
 {
-  
     class Program
     {
         static int dimension = 2;
@@ -248,3 +247,5 @@ namespace TicTacToe
         }
     }
 }
+
+
