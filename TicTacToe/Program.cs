@@ -236,6 +236,7 @@ namespace TicTacToe
             return returnValue;
         }
 
+
         private static void ClearBoard(char[,] board)
         {
             for (int x = 0; x < dimension; x++)
@@ -246,7 +247,8 @@ namespace TicTacToe
                 }
             }
         }
+
     }
 }
 
-// and ends here again
+
