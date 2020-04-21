@@ -6,6 +6,7 @@ namespace TicTacToe
     [Serializable]
 
     // a new comment amended again
+    
 
     internal class InvalidMoveException : Exception
     {
