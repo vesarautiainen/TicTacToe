@@ -1,8 +1,10 @@
 ﻿using System;
   
 namespace TicTacToe
+// start of the main
+
 {
-  // game starts here
+
     class Program
     {
 
