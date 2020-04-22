@@ -36,6 +36,8 @@ namespace TicTacToe
 
             ClearBoard(gameBoard);
 
+
+
             do
             {
                 ClearBoard(gameBoard);
@@ -51,6 +53,7 @@ namespace TicTacToe
                     PrintBoard(gameBoard);
                     Console.Write("Player {0}, make your move: ", PrintPlayer(currentPlayer));
                     strMove = Console.ReadLine();
+
 
                     try
                     {
