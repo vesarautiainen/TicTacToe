@@ -14,6 +14,8 @@ namespace TicTacToe
         {
         }
 
+
+
         public InvalidMoveException(string message, Exception innerException) : base(message, innerException)
         {
         }
