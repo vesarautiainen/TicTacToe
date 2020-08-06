@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 namespace TicTacToe
 
@@ -8,6 +8,8 @@ namespace TicTacToe
         // another comment
         static int dimension = 3;
         private static char emptyCell = ' ';
+
+
 
         static void Main(string[] args)
         {
