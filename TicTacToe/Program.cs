@@ -5,10 +5,6 @@ namespace TicTacToe
     class Program
     {
 
-
-
-
-
         static int dimension = 3;
 
 
@@ -30,6 +26,7 @@ namespace TicTacToe
             int currentPlayer = 0; // 0 == X 1 == Y
             string strMove;
             int moveCount;
+            
             Tuple<int, int> move = new Tuple<int, int>(0, 0);
 
             gameBoard = new char[dimension, dimension];
