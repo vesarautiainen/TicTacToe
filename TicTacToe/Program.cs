@@ -18,7 +18,7 @@ namespace TicTacToe
 
             PlayGame();
         }
-
+   
         private static void PlayGame()
         {
             char[,] gameBoard;
