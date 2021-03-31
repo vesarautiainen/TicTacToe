@@ -2,7 +2,6 @@
 
 namespace TicTacToe
 {
-// my code change
     class Program
     {
         // dimensions
