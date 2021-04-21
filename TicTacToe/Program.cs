@@ -4,16 +4,15 @@
 
 namespace TicTacToe
 {
+
+    
     class Program
     {
         // dimensions 
 
-        //Remove these lines later
-        // remove these liines later
-
-        // modify these lines later
-        // modify these lines later
-        // modify these lines later
+        // modif y these lines later
+        // modify  these lines later
+        // modify thes e lines later
         static int dimension = 2;
         private static char emptyCell = ' ';
 
