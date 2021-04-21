@@ -1,14 +1,24 @@
 ﻿using System;
 
+
+
 namespace TicTacToe
 {
     class Program
     {
-        static int dimension = 3;
+        // dimensions 
+
+        //Remove these lines later
+        // remove these liines later
+
+        // modify these lines later
+        // modify these lines later
+        // modify these lines later
+        static int dimension = 2;
         private static char emptyCell = ' ';
 
         static void Main(string[] args)
-        {
+        { 
             if (args.Length != 0)
             {
                 dimension = int.Parse(args[0]);
@@ -16,7 +26,6 @@ namespace TicTacToe
 
             PlayGame();
         }
-
         private static void PlayGame()
         {
             char[,] gameBoard;
@@ -27,7 +36,6 @@ namespace TicTacToe
 
             gameBoard = new char[dimension, dimension];
 
-            // test comment
             ClearBoard(gameBoard);
 
             do
@@ -66,14 +74,17 @@ namespace TicTacToe
                         }
                     }
                 }
+
                 PrintBoard(gameBoard);
+                // merge-test-line
                 Console.WriteLine("Congratulations player {0}. YOU WON!", PrintPlayer(currentPlayer));
 
             } while (NewGame());
 
-            Console.WriteLine("Thanks for playing! How about another game?");
+            Console.WriteLine("Thanks for playing! How about another game my friend?");
         }
 
+        // merge-test-line
         private static bool NewGame()
         {
             bool returnValue = false;
@@ -103,6 +114,7 @@ namespace TicTacToe
             {
                 if (player != board[move.Item1, y])
                 {
+                    // merge-test-line
                     break;
                 }
 
