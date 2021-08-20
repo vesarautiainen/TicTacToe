@@ -3,12 +3,15 @@
 namespace TicTacToe
 
 {
-    
+    // test commit to cause a conflict
+    // here
     class Program
     {
         // another comment
         static int dimension = 3;
         private static char emptyCell = ' ';
+        
+        // and here
 
         static void Main(string[] args)
         {
