@@ -1,10 +1,11 @@
-﻿using System;
+﻿using System; // needed
+// do we need anything else?
+
 
 namespace TicTacToe
 
 {
-    // test commit to cause a conflict
-    // here
+    // test commit to cause a conf
     class Program
     {
         // another comment
