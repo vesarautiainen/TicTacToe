@@ -5,10 +5,12 @@
 namespace TicTacToe
 
 {
-    // test commit to cause a conf
+    // test commit to cause a conf?
     class Program
     {
+        //
         // another comment
+        //
         static int dimension = 3;
         private static char emptyCell = ' ';
         
@@ -23,7 +25,8 @@ namespace TicTacToe
 
             PlayGame();
         }
-
+        
+        // start game here
         private static void PlayGame()
         {
             char[,] gameBoard;
