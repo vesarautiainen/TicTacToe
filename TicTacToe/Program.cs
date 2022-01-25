@@ -4,8 +4,8 @@ namespace TicTacToe
 {
     class Program
     {
-        // dimensions
-        static int dimension = 2;
+        // dimensions test
+        static int dimension = 3;
         private static char emptyCell = ' ';
 
         static void Main(string[] args)
