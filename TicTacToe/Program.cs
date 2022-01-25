@@ -2,8 +2,11 @@
 
 namespace TicTacToe
 {
+    // test commit to cause a conflict
     class Program
     {
+        // another comment that can conflict
+        // does it?
         static int dimension = 2;
         private static char emptyCell = ' ';
 
