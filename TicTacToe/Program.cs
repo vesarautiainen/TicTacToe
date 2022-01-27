@@ -56,7 +56,7 @@ namespace TicTacToe
                         if (ex is InvalidMoveException || ex is IndexOutOfRangeException)
                         {
                             Console.WriteLine();
-                            Console.WriteLine("INVALID MOVE");
+                            Console.WriteLine("INVALID MOVE MATE");
                             Console.WriteLine();
                             moveCount--;
                         }
