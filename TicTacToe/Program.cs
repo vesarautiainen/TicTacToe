@@ -4,7 +4,7 @@ namespace TicTacToe
 {
     class Program
     {
-
+        // here we could add some comments
         static int dimension = 2;
         private static char emptyCell = ' ';
 
