@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 namespace TicTacToe
 {
@@ -21,13 +21,14 @@ namespace TicTacToe
         private static void PlayGame()
         {
             char[,] gameBoard;
-            int currentPlayer = 0; 
+            int currentPlayer = 1; 
             string strMove;
             int moveCount;
             Tuple<int, int> move = new Tuple<int, int>(0, 0);
 
             gameBoard = new char[dimension, dimension];
-
+            
+            // test comment
             ClearBoard(gameBoard);
 
             do
