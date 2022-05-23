@@ -2,7 +2,7 @@
 using System.Runtime.Serialization;
 
 namespace TicTacToe 
-// The game logic when move is incorrect.
+// The game logic when move is correct.
 {
     [Serializable]
     internal class InvalidMoveException : Exception
