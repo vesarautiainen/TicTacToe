@@ -6,7 +6,7 @@ namespace TicTacToe
     class Program
     {
         // dimensions
-        static int dimension = 2;
+        static int dimension = 3;
         private static char emptyCell = ' ';
 
         static void Main(string[] args)
@@ -76,8 +76,6 @@ namespace TicTacToe
 
             Console.WriteLine("Thanks for playing! How about another game my friend?");
         }
-
-        // merge-test-line
         private static bool NewGame()
         {
             bool returnValue = false;
