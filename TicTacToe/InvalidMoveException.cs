@@ -3,7 +3,7 @@ using System.Runtime.Serialization;
 // main branch comment
 // another main
 namespace TicTacToe
-{
+{ 
     [Serializable]
     internal class InvalidMoveException : Exception
     {
