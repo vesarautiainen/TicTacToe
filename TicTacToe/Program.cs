@@ -1,11 +1,10 @@
 ﻿using System;
 
-
 namespace TicTacToe
 {
     class Program
     {
-        static int dimension = 2;
+        static int dimension = 3;
         private static char emptyCell = ' ';
 
         static void Main(string[] args)
@@ -17,7 +16,8 @@ namespace TicTacToe
 
             PlayGame();
         }
-   
+
+        // The main code for the game
         private static void PlayGame()
         {
             char[,] gameBoard;
