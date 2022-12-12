@@ -5,7 +5,7 @@ namespace TicTacToe
 {
     class Program
     {
-        static int dimension = 2;
+        static int dimension = 1;
         private static char emptyCell = ' ';
 
         static void Main(string[] args)
@@ -18,6 +18,8 @@ namespace TicTacToe
             PlayGame();
         }
    
+
+        // main code
         private static void PlayGame()
         {
             char[,] gameBoard;
