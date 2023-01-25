@@ -1,11 +1,10 @@
 ﻿using System;
 
-
 namespace TicTacToe
 {
     class Program
     {
-        static int dimension = 1;
+        static int dimension = 3;
         private static char emptyCell = ' ';
 
         static void Main(string[] args)
