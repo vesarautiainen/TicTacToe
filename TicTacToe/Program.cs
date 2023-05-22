@@ -1,15 +1,15 @@
 ﻿using System;
- 
+
+
 namespace TicTacToe
-{
-    class Program
     {
-        // dimensions 
-        static int dimension = 1;
+        class Program
+    {
+        static int dimension = 2;
         private static char emptyCell = ' ';
 
         static void Main(string[] args)
-        { 
+        {
             if (args.Length != 0)
             {
                 dimension = int.Parse(args[0]);
@@ -17,18 +17,17 @@ namespace TicTacToe
 
             PlayGame();
         }
-   
+
         private static void PlayGame()
         {
             char[,] gameBoard;
-            int currentPlayer = 1; 
+            int currentPlayer = 0; // 0 == X 1 == Y
             string strMove;
             int moveCount;
             Tuple<int, int> move = new Tuple<int, int>(0, 0);
 
             gameBoard = new char[dimension, dimension];
-            
-            // test comment
+
             ClearBoard(gameBoard);
 
             do
@@ -57,7 +56,7 @@ namespace TicTacToe
                         if (ex is InvalidMoveException || ex is IndexOutOfRangeException)
                         {
                             Console.WriteLine();
-                            Console.WriteLine("INVALID MOVE MATE");
+                            Console.WriteLine("INVALID MOVE");
                             Console.WriteLine();
                             moveCount--;
                         }
@@ -78,7 +77,7 @@ namespace TicTacToe
         }
 
         // merge-test-line
-        private static bool NewGame()
+        private static bool NewGame() 
         {
             bool returnValue = false;
             Console.WriteLine("Would you like to play another game? [y/n]");
