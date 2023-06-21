@@ -1,13 +1,11 @@
 ﻿using System;
 
-
 namespace TicTacToe
 {
-// my code change
     class Program
     {
         // dimensions
-        static int dimension = 3;
+        static int dimension = 2;
         private static char emptyCell = ' ';
 
         static void Main(string[] args)
@@ -19,7 +17,7 @@ namespace TicTacToe
 
             PlayGame();
         }
-   
+
         private static void PlayGame()
         {
             char[,] gameBoard;
@@ -58,7 +56,7 @@ namespace TicTacToe
                         if (ex is InvalidMoveException || ex is IndexOutOfRangeException)
                         {
                             Console.WriteLine();
-                            Console.WriteLine("INVALID MOVE MATE");
+                            Console.WriteLine("INVALID MOVE");
                             Console.WriteLine();
                             moveCount--;
                         }
@@ -77,6 +75,8 @@ namespace TicTacToe
 
             Console.WriteLine("Thanks for playing! How about another game my friend?");
         }
+
+        // merge-test-line
         private static bool NewGame()
         {
             bool returnValue = false;
