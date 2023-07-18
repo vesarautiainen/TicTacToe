@@ -17,7 +17,8 @@ namespace TicTacToe
 
             PlayGame();
         }
-   
+        
+        // start game here 
         private static void PlayGame()
         {
             char[,] gameBoard;
@@ -38,6 +39,7 @@ namespace TicTacToe
                 strMove = "";
                 moveCount = -1;
 
+                //
                 while (!EndOfGame(gameBoard, PrintPlayer(currentPlayer), move))
                 {
                     moveCount++;
@@ -66,7 +68,6 @@ namespace TicTacToe
                         }
                     }
                 }
-
                 PrintBoard(gameBoard);
                 // merge-test-line
                 Console.WriteLine("Congratulations player {0}. YOU WON!", PrintPlayer(currentPlayer));
