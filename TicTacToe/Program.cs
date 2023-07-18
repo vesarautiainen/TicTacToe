@@ -1,9 +1,8 @@
 ﻿using System;
 
-
 namespace TicTacToe
 {
-// my code change
+// my code changes
     class Program
     {
         // dimensions
@@ -19,7 +18,8 @@ namespace TicTacToe
 
             PlayGame();
         }
-   
+
+        // Game start
         private static void PlayGame()
         {
             char[,] gameBoard;
