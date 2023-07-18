@@ -2,11 +2,11 @@
 
 namespace TicTacToe
 {
-// my code changes
+// my code changes (test)
     class Program
     {
         // dimensions
-        static int dimension = 3;
+        static int dimension = 2;
         private static char emptyCell = ' ';
 
         static void Main(string[] args)
