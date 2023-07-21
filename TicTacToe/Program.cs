@@ -5,7 +5,7 @@ namespace TicTacToe
 // my code changes (test)
     class Program
     {
-        // dimensions
+        // dimensions  
         static int dimension = 2;
         private static char emptyCell = ' ';
 
