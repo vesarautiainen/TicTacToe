@@ -2,9 +2,10 @@
 
 namespace TicTacToe
 {
+// my code changes (test)
     class Program
     {
-        // dimensions 
+        // dimensions  
         static int dimension = 2;
         private static char emptyCell = ' ';
 
@@ -17,7 +18,8 @@ namespace TicTacToe
 
             PlayGame();
         }
-   
+
+        // Game start
         private static void PlayGame()
         {
             char[,] gameBoard;
@@ -56,7 +58,7 @@ namespace TicTacToe
                         if (ex is InvalidMoveException || ex is IndexOutOfRangeException)
                         {
                             Console.WriteLine();
-                            Console.WriteLine("INVALID MOVE");
+                            Console.WriteLine("INVALID MOVE MATE");
                             Console.WriteLine();
                             moveCount--;
                         }
@@ -75,8 +77,6 @@ namespace TicTacToe
 
             Console.WriteLine("Thanks for playing! How about another game my friend?");
         }
-
-        // merge-test-line
         private static bool NewGame()
         {
             bool returnValue = false;
