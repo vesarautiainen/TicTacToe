@@ -175,7 +175,7 @@ namespace TicTacToe
             string seperator = GetSeperatorLine();
             for (int y = 0; y < dimension; y++)
             {
-                Console.WriteLine(seperator);
+                Console.WriteLine(seperator); 
                 for (int x = 0; x < dimension; x++)
                 {
                     if (x == 0)
