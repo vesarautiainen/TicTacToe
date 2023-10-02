@@ -9,7 +9,7 @@ namespace TicTacToe
     class Program
     {
         //
-        // another comment 
+        // another comment, consider removing this. 
         //   
         static int dimension = 2;
         private static char emptyCell = ' ';
