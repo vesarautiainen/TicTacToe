@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace TicTacToe 
-// The game logic when move is correct.
+
+
+namespace TicTacToe
 {
     [Serializable]
     internal class InvalidMoveException : Exception
