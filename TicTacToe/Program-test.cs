@@ -77,8 +77,8 @@ namespace TicTacToe
             Console.WriteLine("Thanks for playing! How about another game my friend?");
         }
 
-        // merge-test-line
-        private static bool NewGame()
+        // merge-test-line 
+        private static bool NewGame()  
         {
             bool returnValue = false;
             Console.WriteLine("Would you like to play another game? [y/n]");
