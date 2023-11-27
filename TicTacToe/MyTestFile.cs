@@ -8,6 +8,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.Extensions.Options;
+using BikeSharing.Web.Configuration;
 
 namespace BikeSharing.Web
 
@@ -21,7 +23,7 @@ namespace BikeSharing.Web
         {
             var builder = new ConfigurationBuilder()
                 .SetBasePath(env.ContentRootPat)
-                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
+                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
         }
@@ -33,8 +35,6 @@ namespace BikeSharing.Web
         public void ConfigureServices(IServiceCollection services)
 
         {
-            // Configuration Settings;
-            services.settings();
             services.AddOptions()
             services.Configure<Links>(Configuration.GetSection("Links"));
 
