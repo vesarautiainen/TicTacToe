@@ -78,7 +78,7 @@ namespace TicTacToe
         }
 
         // merge-test-line 
-        private static bool NewGame()  
+        private static bool NewGame()     
         {
             bool returnValue = false;
             Console.WriteLine("Would you like to play another game? [y/n]");

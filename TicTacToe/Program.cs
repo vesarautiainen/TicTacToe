@@ -22,12 +22,14 @@ namespace TicTacToe
         private static void PlayGame()
         {
             char[,] gameBoard;
-            int currentPlayer = 0; // 0 == X 1 == Y
+            int playerCount = 2;
+            int currentPlayer = 0; // 0 == Y 1 == X
+            
             string strMove;
             int moveCount;
             Tuple<int, int> move = new Tuple<int, int>(0, 0);
 
-            gameBoard = new char[dimension, dimension];
+            gameBoard = new char[dimension, diEmension];
 
             ClearBoard(gameBoard);
 
