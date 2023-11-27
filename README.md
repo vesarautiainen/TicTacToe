@@ -9,4 +9,6 @@ You can define the dimensions of the square board size.
 
 The game will calculate a winner or set the next turn after every move.
 
+Note! This game is still unfinished.
+
 

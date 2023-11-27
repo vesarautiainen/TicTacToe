@@ -1,11 +1,13 @@
 ﻿using System;
 
+
+// Do the same thing with this snippet from TicTacToe/Program.cs:
 namespace TicTacToe
 {
     class Program
     {
 
-        static int dimension = 2;
+        static int dimension = 3;
         private static char emptyCell = ' ';
 
         static void Main(string[] args)
@@ -21,7 +23,7 @@ namespace TicTacToe
         private static void PlayGame()
         {
             char[,] gameBoard;
-            int currentPlayer = 0; // 0 == X 1 == Y
+            int currentPlayer = 0; 
             string strMove;
             int moveCount;
             Tuple<int, int> move = new Tuple<int, int>(0, 0);
