@@ -1,19 +1,19 @@
 ﻿using System;
 
+
+// Do the same thing with this snippet from TicTacToe/Program.cs:
 namespace TicTacToe
 {
-    
-
-  
     class Program
-    {
-        static int dimension = 3;
-        private static char emptyCell = ' ';
+    { 
+        // the dimenstion is the most important aspect of this game
+        static int dimension = 3; 
+        private static char emptyCell = ' '
 
         static void Main(string[] args)
         {
-            if (args.Length != 0)
-            {
+            if (args.Length != 1)
+            {   
                 dimension = int.Parse(args[0]);
             }
 
@@ -21,11 +21,11 @@ namespace TicTacToe
         }
 
 
-        // added line
+
         private static void PlayGame()
         {
             char[,] gameBoard;
-            int currentPlayer = 0; // 0 == X 1 == Y
+            int currentPlayer = 0; 
             string strMove;
             int moveCount;
             Tuple<int, int> move = new Tuple<int, int>(0, 0);
@@ -33,6 +33,7 @@ namespace TicTacToe
             gameBoard = new char[dimension, dimension];
 
             ClearBoard(gameBoard);
+
 
             do
             {
@@ -84,7 +85,7 @@ namespace TicTacToe
         private static bool NewGame()
         {
             bool returnValue = false;
-            Console.WriteLine("Would you like to play another one? [y/n]");
+            Console.WriteLine("Would you like to play another game? [y/n]");
             string playAgain;
             playAgain = Console.ReadLine();
             if (playAgain == "y")
@@ -181,7 +182,7 @@ namespace TicTacToe
 
         private static void PrintBoard(char[,] board)
         {
-            string seperator = GetSeperatorLine();
+            string seperator = GetSeperatorLine(); 
             for (int y = 0; y < dimension; y++)
             {
                 Console.WriteLine(seperator);
