@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Runtime.Serialization;
-
-namespace TicTacToe
+namespace TicTacToe // New comment
 {
     [Serializable]
     internal class InvalidMoveException : Exception
