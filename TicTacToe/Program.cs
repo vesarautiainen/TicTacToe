@@ -6,7 +6,7 @@ namespace TicTacToe
     class Program
     {
         // dimensions
-        static int dimension = 3;
+        static int dimension = 2;
         private static char emptyCell = ' ';
 
         static void Main(string[] args)
@@ -87,16 +87,16 @@ namespace TicTacToe
             {
                 returnValue = true;
             }
-            else if (playAgain == "n")
-            {
-                returnValue = false;
-            }
+            //else if (playAgain == "n")
+            //{
+            //    returnValue = false;
+            //}
             else
             {
                 returnValue = NewGame();
             }
 
-            return returnValue;
+            return false;
         }
 
         private static bool EndOfGame(char[,] board, char player, Tuple<int, int> move)
